@@ -13,8 +13,8 @@ call add(g:ctrlp_ext_vars, {
       \   'accept': 'ctrlp#goimport#accept',
       \   'lname':  'goimport',
       \   'sname':  'gi',
-      \   'type':   'line',
-      \   'sort':   0,
+      \   'type':   'path',
+      \   'sort':   1,
       \ })
 
 function! ctrlp#goimport#init()
@@ -26,6 +26,7 @@ endfunction
 
 function! ctrlp#goimport#accept(mode, str)
   call ctrlp#exit()
+  call go#import#SwitchImport(1, '', a:str, '')
   echom a:str
 endfunction
 
