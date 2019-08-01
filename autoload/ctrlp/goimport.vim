@@ -1,10 +1,5 @@
 scriptencoding utf-8
 
-if exists('g:loaded_ctrlpgoimport')
-    finish
-endif
-let g:loaded_ctrlpgoimport = 1
-
 let s:save_cpoptions = &cpoptions
 set cpoptions&vim
 
@@ -27,7 +22,6 @@ endfunction
 function! ctrlp#goimport#accept(mode, str)
   call ctrlp#exit()
   call go#import#SwitchImport(1, '', a:str, '')
-  echom a:str
 endfunction
 
 let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)
