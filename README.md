@@ -3,6 +3,8 @@ ctrlp-goimport
 
 ctrlp-goimport provides a Go packages incremental search and import in ctrlp.vim.
 
+![demo](https://raw.github.com/wiki/nametake/ctrlp-goimport/img/demo.gif)
+
 Requirement
 -----------
 
