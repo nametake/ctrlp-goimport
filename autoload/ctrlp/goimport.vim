@@ -16,7 +16,7 @@ function! ctrlp#goimport#init()
   if !executable('gopkgs')
     echohl 'Please install gopkgs'
   endif
-  return split(system('gopkgs --no-vendor'), "\n")
+  return split(system('gopkgs --no-vendor --workDir .'), "\n")
 endfunction
 
 function! ctrlp#goimport#accept(mode, str)
