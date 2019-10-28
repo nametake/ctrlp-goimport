@@ -13,10 +13,7 @@ call add(g:ctrlp_ext_vars, {
       \ })
 
 function! ctrlp#goimport#init()
-  let cmd=get(g:, "ctrlp_goimports_pkg_list_command", "go list all")
-  if !executable(cmd)
-    echohl 'Please install ' . cmd
-  endif
+  let cmd=get(g:, "ctrlp_goimports_command", "go list all")
   return split(system(cmd), "\n")
 endfunction
 
