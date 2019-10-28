@@ -10,14 +10,9 @@ Requirement
 
 -	[ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
 -	[vim-go](https://github.com/fatih/vim-go)
--	[gopkgs](https://github.com/uudashr/gopkgs)
 
 Installation
 ------------
-
-```console
-go get -u github.com/uudashr/gopkgs/cmd/gopkgs
-```
 
 ### vim-plug
 
