@@ -13,10 +13,11 @@ call add(g:ctrlp_ext_vars, {
       \ })
 
 function! ctrlp#goimport#init()
-  if !executable('gopkgs')
-    echohl 'Please install gopkgs'
+  let cmd=get(g:, "ctrlp_goimports_pkg_list_command", "go list all")
+  if !executable(cmd)
+    echohl 'Please install ' . cmd
   endif
-  return split(system('gopkgs --no-vendor'), "\n")
+  return split(system(cmd), "\n")
 endfunction
 
 function! ctrlp#goimport#accept(mode, str)
