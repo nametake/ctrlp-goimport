@@ -38,5 +38,5 @@ Run: `CtrlPGoimport` or type the mapped command to invoke ctrlp-goimport.
 The command to list packages is `go list all`. If you want to use another command, set the command as follows.
 
 ```
-let g:ctrlp_goimports_command='gopkgs --no-vendor'
+let g:ctrlp_goimport_command='gopkgs --no-vendor'
 ```

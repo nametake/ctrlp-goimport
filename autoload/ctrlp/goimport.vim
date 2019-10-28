@@ -13,7 +13,7 @@ call add(g:ctrlp_ext_vars, {
       \ })
 
 function! ctrlp#goimport#init()
-  let cmd=get(g:, "ctrlp_goimports_command", "go list all")
+  let cmd=get(g:, "ctrlp_goimport_command", "go list all")
   return split(system(cmd), "\n")
 endfunction
 
