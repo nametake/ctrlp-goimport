@@ -9,7 +9,7 @@ Requirement
 -----------
 
 -	[ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
--	[vim-go](https://github.com/fatih/vim-go)
+-	[vim-go](https://github.com/fatih/vim-go) or [gopher.vim](https://github.com/arp242/gopher.vim)
 
 Installation
 ------------
